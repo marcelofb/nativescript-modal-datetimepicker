@@ -23,21 +23,8 @@ export class ModalDatetimepicker {
       if (options.startingDate) startDate = options.startingDate;
 
       try {
-        let themeId = android.app.AlertDialog.THEME_DEVICE_DEFAULT_LIGHT;
-        if (options.theme && options.theme === "dark") {
-          themeId = android.app.AlertDialog.THEME_DEVICE_DEFAULT_DARK;
-        }
-
-        if (options.datePickerMode && options.datePickerMode === "spinner") {
-          themeId = android.app.AlertDialog.THEME_HOLO_LIGHT;
-          if (options.theme && options.theme === "dark") {
-            themeId = android.app.AlertDialog.THEME_HOLO_DARK;
-          }
-        }
-
         let datePicker = new android.app.DatePickerDialog(
           app.android.foregroundActivity,
-          themeId,
           new android.app.DatePickerDialog.OnDateSetListener({
             onDateSet: (view, year, monthOfYear, dayOfMonth) => {
               const date: DateResponse = {

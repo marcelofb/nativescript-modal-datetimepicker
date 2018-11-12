@@ -1,5 +1,5 @@
 {
-  "name": "nativescript-modal-datetimepicker",
+  "name": "nativescript-modal-datetimepicker-fixed-color",
   "version": "1.1.10",
   "description": "A nice looking modal date time picker.",
   "main": "modal-datetimepicker",
@@ -24,13 +24,13 @@
     "test.android": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build android && tns test android --justlaunch",
     "test.ios": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build ios && tns test ios --justlaunch",
     "tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\"",
-    "plugin.link": "npm link && cd ../demo && npm link nativescript-modal-datetimepicker && cd ../src",
+    "plugin.link": "npm link && cd ../demo && npm link nativescript-modal-datetimepicker-fixed-color && cd ../src",
     "plugin.tscwatch": "npm run tsc -- -w",
     "debug.ios": "npm i && npm run tsc && cd ../demo && tns debug ios --syncAllFiles",
     "demo.ios": "npm i && npm run tsc && cd ../demo && tns run ios --syncAllFiles",
     "demo.android": "npm i && npm run tsc && cd ../demo && tns run android --syncAllFiles",
     "demo.reset": "cd ../demo && rimraf platforms",
-    "plugin.prepare": "npm run tsc && cd ../demo && tns plugin remove nativescript-modal-datetimepicker && tns plugin add ../src",
+    "plugin.prepare": "npm run tsc && cd ../demo && tns plugin remove nativescript-modal-datetimepicker-fixed-color && tns plugin add ../src",
     "clean": "cd ../demo && rimraf hooks node_modules platforms && cd ../src && rimraf node_modules && npm run plugin.link",
     "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**'",
     "precommit": "lint-staged"
@@ -79,13 +79,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/davecoffin/nativescript-modal-datetimepicker"
+    "url": "https://github.com/marcelofb/nativescript-modal-datetimepicker"
   },
   "bugs": {
-    "url": "https://github.com/davecoffin/nativescript-modal-datetimepicker/issues"
+    "url": "https://github.com/marcelofb/nativescript-modal-datetimepicker/issues"
   },
   "license": "Apache-2.0",
-  "homepage": "https://github.com/davecoffin/nativescript-modal-datetimepicker",
+  "homepage": "https://github.com/marcelofb/nativescript-modal-datetimepicker",
   "readmeFilename": "README.md",
   "devDependencies": {
     "husky": "^0.14.3",
